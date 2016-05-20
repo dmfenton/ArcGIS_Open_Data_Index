@@ -18,4 +18,4 @@ I'll keep this updated either randomly when it strikes my fancy or upon request.
 1. Visit Kibana (defaults to `http://localhost:5601`)
 1. Select the `opendata` index
 
-
+![image](https://cloud.githubusercontent.com/assets/7832202/15438218/113f6e24-1e99-11e6-89d8-cbe766de638e.png)
