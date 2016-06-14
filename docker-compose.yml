@@ -4,7 +4,8 @@ services:
     image: elasticsearch:latest
     entrypoint: /tmp/elasticEntry.sh
     command: elasticsearch -Des.network.host=0.0.0.0
-    ports: "9200:9200"
+    ports: 
+      -"9200:9200"
   logstash:
     image: logstash:latest
     entrypoint: /tmp/logstashEntry.sh
