@@ -3,7 +3,9 @@ services:
   elasticsearch:
     image: elasticsearch:latest
   logstash:
-    image: logstash:latest
+    build: 
+      context: ./
+      dockerfile: Dockerfile.logstash
     entrypoint: /tmp/logstashEntry.sh
     volumes:
       - ./:/tmp
