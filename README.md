@@ -7,7 +7,9 @@ I'll keep this updated either randomly when it strikes my fancy or upon request.
 ### Docker style (on OSX and maybe Windows?)
 1. Install Docker Toolbox
 1. Follow the instructions to create a Docker host
-1. Run `docker-compose up -d` 
+1. Run `docker-compose up -d elasticsearch kibana`
+1. Wait for elasticsearch to become available on your docker host
+1. Run `docker-compose run logstash`
 1. visit your Kibana on your docker host port 5601 (you can find the ip of your host by running `docker-machine env default`
 
 ### Local machine
