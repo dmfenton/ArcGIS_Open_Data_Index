@@ -6,6 +6,8 @@ services:
     command: elasticsearch -Des.network.host=0.0.0.0
     ports: 
       -"9200:9200"
+    volumes:
+      - ./:/tmp
   logstash:
     image: logstash:latest
     entrypoint: /tmp/logstashEntry.sh
