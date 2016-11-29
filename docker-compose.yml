@@ -3,21 +3,14 @@ services:
   elasticsearch:
     image: elasticsearch:latest
     ports:
-      - "9200:9200"
+      - "9209:9200"
   logstash:
-    build: 
+    build:
       context: ./
-      dockerfile: Dockerfile.logstash
-    entrypoint: /tmp/logstashEntry.sh
-    volumes:
-      - ./:/tmp
+    entrypoint: /docker-entrypoint.sh
     depends_on:
      - elasticsearch
-    links:
-      - elasticsearch
   kibana:
     image: kibana:latest
     ports:
-      - "5601:5601"
-    links:
-      - elasticsearch
+      - "5609:5601"
