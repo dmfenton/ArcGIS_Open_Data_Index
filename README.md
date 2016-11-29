@@ -3,7 +3,12 @@ The entire index for http://opendata.arcgis.com
 
 I'll keep this updated either randomly when it strikes my fancy or upon request. Enjoy!
 
+
+
 ## Analysis
+
+To use this repo you must have [Git Large File Storage](https://help.github.com/articles/installing-git-large-file-storage/) installed.
+
 ### Docker style (on OSX and maybe Windows?)
 1. Install Docker Toolbox
 1. Follow the instructions to create a Docker host
