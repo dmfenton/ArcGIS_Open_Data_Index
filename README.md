@@ -13,6 +13,7 @@ I'll keep this updated either randomly when it strikes my fancy or upon request.
 1. Bring up elasticsearch and kibana with `docker-compose up -d elasticsearch kibana`
 1. Wait for elasticsearch to become available. You should get a `200` response at http://localhost:9209
 1. Run `docker-compose run logstash`
+ - This will take a while to run but you can continue on to the next step while datasets flow in to Elasticsearch
 1. Visit your [Kibana](http://localhost:5609)
 1. Deselect time-based
 1. Type in opendata for index pattern
